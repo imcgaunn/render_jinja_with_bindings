@@ -11,3 +11,8 @@ this_directory = Path(__file__).parent.absolute()
 @pytest.fixture(scope="session")
 def jinja_templates_dir():
     return this_directory.joinpath("jinja")
+
+
+@pytest.fixture(scope="session")
+def bindings_dir():
+    return this_directory.joinpath("bindings")

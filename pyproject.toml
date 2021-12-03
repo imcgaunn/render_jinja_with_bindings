@@ -9,6 +9,7 @@ license = "WTFPL"
 python = "^3.9"
 Jinja2 = "^3.0.3"
 rich = "^10.15.2"
+PyYAML = "^6.0"
 
 [tool.poetry.dev-dependencies]
 black = "^21.11b1"
