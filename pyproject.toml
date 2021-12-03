@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "render_jinja_with_bindings"
+version = "0.1.0"
+description = "a command line utility to render a jinja template with variables bound to specified values"
+authors = ["ian mcgaunn <ian@mcgaunn.com>"]
+license = "WTFPL"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+Jinja2 = "^3.0.3"
+rich = "^10.15.2"
+
+[tool.poetry.dev-dependencies]
+black = "^21.11b1"
+pytest = "^6.2.5"
+flake8 = "^4.0.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
