@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "render_jinja_with_bindings"
+name = "rendertempl"
 version = "0.1.0"
 description = "a command line utility to render a jinja template with variables bound to specified values"
 authors = ["ian mcgaunn <ian@mcgaunn.com>"]
@@ -15,6 +15,9 @@ PyYAML = "^6.0"
 black = "^21.11b1"
 pytest = "^6.2.5"
 flake8 = "^4.0.1"
+
+[tool.poetry.scripts]
+rendertempl = "rendertempl.main:main"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
