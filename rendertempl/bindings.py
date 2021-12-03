@@ -10,16 +10,18 @@ class BadBindingsPathError(Exception):
 
 
 def load_bindings_from_file(yaml_path: Path) -> Dict[Any, Any]:
-    """ load bindings from a single .yml file """
+    """load bindings from a single .yml file"""
     if not yaml_path.is_file():
         raise BadBindingsPathError(f"{yaml_path} is not a yaml file")
     return {}
 
 
 def load_bindings_from_directory(dir_path: Path) -> Dict[Any, Any]:
-    """ load bindings from a directory of .yml files in lexicographical precedence order """ 
+    """load bindings from a directory of .yml files in lexicographical precedence order"""
     if not dir_path.is_dir():
-        raise BadBindingsPathError(f"{dir_path} is not a directory and can't contain yaml files with bindings")
+        raise BadBindingsPathError(
+            f"{dir_path} is not a directory and can't contain yaml files with bindings"
+        )
     # TODO: actually load the bindings
     # NB: this seems like a pretty good use for `collections.ChainMap`
     # Help on class ChainMap in collections:
