@@ -1,0 +1,4 @@
+---
+a_key: "second value"
+c_key: "overriden in 02-cool"
+d_key: "this is only defined in the second file!"

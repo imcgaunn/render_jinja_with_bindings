@@ -1,0 +1,4 @@
+---
+a_key: "initial value"
+b_key: "this is only defined here in this first file!"
+c_key: "this is overridden in the next file"
